@@ -1,0 +1,29 @@
+@function px2rem($px) {
+    @return $px/$designWidth+rem;
+}
+
+$designWidth : 640;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+.child {
+    float: left;
+    background: #ddd;
+    width: px2rem(256);
+    height: px2rem(128);
+    margin: px2rem(32) px2rem(32);
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}

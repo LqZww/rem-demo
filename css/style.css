@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+.child {
+  float: left;
+  background: #ddd;
+  width: 0.4rem;
+  height: 0.2rem;
+  margin: 0.05rem 0.05rem; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
